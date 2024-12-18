@@ -121,20 +121,18 @@ const ItemList = () => {
 	};
 
 	// Закрытие окна при клике на фон
-	const handleBackgroundClick = (e: any) => {
-		if (e.target.id === "modal-background") {
+	const handleBackgroundClick = (e: React.MouseEvent<HTMLDivElement>) => {
+		const target = e.target as HTMLElement; // Приводим e.target к HTMLElement
+		if (target.id === "modal-background") {
 			closeModal();
 		}
 	};
-
-	if (selectedItem) {
-		console.log(selectedItem.itLogo);
-	}
 
 	return (
 		<div className="bg-[#2f2178] text-white  p-2 sm:p-6 rounded-lg max-w-xl mx-auto">
 			{items.map((item) => (
 				<motion.div
+					key={item.id}
 					initial={{ opacity: 0, translateY: 200 }} // Изначальное положение элемента ниже
 					animate={{ opacity: 1, translateY: 0 }} // Когда элемент появляется, он сдвигается в нормальное положение
 					viewport={{ once: true }} // Анимация произойдет только один раз, когда элемент появится в поле зрения
@@ -145,7 +143,6 @@ const ItemList = () => {
 					}} // Плавное движение
 				>
 					<div
-						key={item.id}
 						className="flex items-center bg-[#4b39c3] my-3 p-3 rounded-3xl cursor-pointer hover:bg-[#3b2a9c] animate-fadeIn duration-500 transition-opacity"
 						onClick={() => openModal(item)}
 					>
