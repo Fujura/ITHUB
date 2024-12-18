@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1007.15 1750.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_2);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_2" data-name="Безымянный градиент 2" x1="-222.67" y1="538.58" x2="1236.53" y2="1332.98" gradientTransform="translate(0 1809.08) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#004b72"/>
+      <stop offset=".01" stop-color="#014970"/>
+      <stop offset=".18" stop-color="#10345e"/>
+      <stop offset=".35" stop-color="#192754"/>
+      <stop offset=".5" stop-color="#1c2350"/>
+      <stop offset=".66" stop-color="#192754"/>
+      <stop offset=".82" stop-color="#10345e"/>
+      <stop offset=".99" stop-color="#024970"/>
+      <stop offset="1" stop-color="#004b72"/>
+    </linearGradient>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <polygon class="cls-1" points="1007.15 68.18 1007.15 1646.38 903.29 1750.24 47.64 1750.24 47.64 1574.56 0 1526.92 0 103.86 103.86 0 938.97 0 1007.15 68.18"/>
+  </g>
+</svg>
