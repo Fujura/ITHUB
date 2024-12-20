@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import logo from "@/public/svg/119-120/SVG/3.svg";
+import logo from "@/public/svg/itlogo.svg";
 import upperElement from "@/public/svg/119-120/SVG/5.svg";
 import underElement from "@/public/svg/119-120/SVG/6.svg";
 import lineElement from "@/public/svg/119-120/SVG/4.svg";
