@@ -168,7 +168,7 @@ const ItemList = () => {
 							backgroundPosition: "center",
 						}}
 						className="relative bg-white text-white p-6 rounded-lg max-w-md w-full shadow-lg transform transition-all duration-300 scale-95 opacity-0 animate-[fadeIn_0.3s_ease-out_forwards]
-					  h-[700px] max-h-[90vh] overflow-y-auto overflow-x-hidden"
+					  h-[700px] max-h-[90vh] overflow-y-auto overflow-x-hidden -z-10 "
 					>
 						{/* Статичный фон и вставки */}
 						<div className="fixed inset-0 ">
@@ -220,20 +220,14 @@ const ItemList = () => {
 									className="absolute bottom-2 left-8 h-24 w-auto z-[-1]"
 								/>
 							</motion.div>
-							<motion.div
-								initial={{ opacity: 0 }} // Изначальное положение элемента ниже
-								whileInView={{ opacity: 1 }} // Когда элемент появляется, он сдвигается в нормальное положение
-								viewport={{ once: true }} // Анимация произойдет только один раз, когда элемент появится в поле зрения
-								transition={{ duration: 0.6, ease: "easeInOut" }} // Плавное движение
+
+							<button
+								onClick={closeModal}
+								className="flex absolute top-0.5 right-2
+							text-3xl z-50"
 							>
-								<button
-									onClick={closeModal}
-									className="absolute top-4 right-6
-							text-3xl"
-								>
-									x
-								</button>
-							</motion.div>
+								x
+							</button>
 						</div>
 
 						{/* Контент модалки с SVG и фоном */}
@@ -242,14 +236,14 @@ const ItemList = () => {
 							animate={{ opacity: 1, scale: 1 }} // Когда элемент появляется, он сдвигается в нормальное положение
 							viewport={{ once: true }} // Анимация произойдет только один раз, когда элемент появится в поле зрения
 							transition={{ duration: 0.8, ease: "easeInOut" }} // Плавное движение
-							className="flex flex-col items-center relative z-10"
+							className="flex flex-col items-center relative"
 						>
 							<Image
 								src={logo}
 								alt="logo"
 								width={200}
 								height={100}
-								className="mt-10"
+								className="mt-10 w-[60%]"
 							/>
 							{selectedItem.itLogo && (
 								<Image
